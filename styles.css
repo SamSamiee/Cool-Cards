@@ -27,7 +27,7 @@ body, html{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 169, 206);
+  background-color: rgb(255, 208, 0);
 }
 
 *{
@@ -54,6 +54,7 @@ body, html{
   padding: 20px;
   border-radius: 15px;
   box-shadow:10px 10px 0 0 rgb(0, 0, 0);
+  transition: 0.5s ease;
 }
 
 .title{
@@ -73,7 +74,7 @@ body, html{
   background-color: rgb(244, 49, 0);
   color:white;
   padding: 10px;
-  box-shadow: 0 0 8px 2px rgb(212, 212, 212);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
   font-size: clamp(1rem, 3vw, 2rem);
   border-radius: 15px;
   text-align: justify;
@@ -85,7 +86,7 @@ body, html{
   background-color: rgb(36, 132, 250);
   color:white;
   padding: 10px;
-  box-shadow: 0 0 8px 2px rgb(212, 212, 212);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
   font-size: clamp(1rem, 3vw, 1.85rem);
   border-radius: 15px;
   text-align: justify;
@@ -96,7 +97,7 @@ body, html{
   background-color: rgb(89, 173, 0);
   color:white;
   padding: 10px;
-  box-shadow: 0 0 8px 2px rgb(212, 212, 212);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
   font-size: clamp(1rem, 2vw, 1.6rem);
   border-radius: 15px;
 }
@@ -106,7 +107,7 @@ body, html{
   grid-area: cover-image;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 0 8px 2px rgb(212, 212, 212);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
   margin-top: 10px;
 }
 
@@ -114,4 +115,17 @@ img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+section{
+  transition: 0.5s ease;
+}
+
+section:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.magazine-cover:hover{
+  transform: scale(1.05);
 }
